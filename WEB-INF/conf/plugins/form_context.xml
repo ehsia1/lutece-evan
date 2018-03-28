@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	 <bean id="form.categoryDAO"  class="fr.paris.lutece.plugins.form.business.CategoryDAO" />
+ 	 <bean id="form.formDAO"  class="fr.paris.lutece.plugins.form.business.FormDAO" />
+ 	 <bean id="form.defaultMessageDAO"  class="fr.paris.lutece.plugins.form.business.DefaultMessageDAO" />
+ 	 <bean id="form.exportFormatDAO"  class="fr.paris.lutece.plugins.form.business.ExportFormatDAO" /> 	 
+ 	 <bean id="form.graphTypeDAO"  class="fr.paris.lutece.plugins.form.business.GraphTypeDAO" />
+ 	 <bean id="form.recapDAO"  class="fr.paris.lutece.plugins.form.business.RecapDAO" />
+ 	 <bean id="form.formActionDAO"  class="fr.paris.lutece.plugins.form.business.FormActionDAO" />
+ 	 <bean id="form.formSubmitDAO"  class="fr.paris.lutece.plugins.form.business.FormSubmitDAO" />
+ 	 <bean id="form.formPortletDAO"  class="fr.paris.lutece.plugins.form.business.portlet.FormPortletDAO" />
+ 	 <bean id="form.formProcessorDAO"  class="fr.paris.lutece.plugins.form.business.outputprocessor.FormProcessorDAO" />
+     <bean id="form.notifySenderConfigurationDAO" 	class="fr.paris.lutece.plugins.form.modules.processornotifysender.business.NotifySenderConfigurationDAO" />
+ 	 <bean id="form.entryParameterDAO" class="fr.paris.lutece.plugins.form.business.parameter.EntryParameterDAO" />
+ 	 <bean id="form.formParameterDAO" class="fr.paris.lutece.plugins.form.business.parameter.FormParameterDAO" />
+ 	 <bean id="form.formRemovalService" class="fr.paris.lutece.portal.service.util.RemovalListenerService" />
+ 	 <bean id="form.entryRemovalService" class="fr.paris.lutece.portal.service.util.RemovalListenerService" />
+	 <bean id="form.resourceRssFormConfigDAO"  class="fr.paris.lutece.plugins.form.business.rss.FormResourceRssConfigDAO" />
+	 
+	<!-- RSS -->
+    <bean id="form.resourceRssTypeForm" class="fr.paris.lutece.portal.business.rss.ResourceRssType" >
+    	<property name="key" value="ResourceRssTypeForm" />
+		<property name="titleI18nKey" value="form.resource_rss_type.label" />
+		<property name="className" value="fr.paris.lutece.plugins.form.business.rss.FormResourceRss"/>
+	</bean>
+	
+	<!-- Services -->
+	<bean id="form.responseService" class="fr.paris.lutece.plugins.form.service.ResponseService" />
+	<bean id="form.entryTypeService" class="fr.paris.lutece.plugins.form.service.EntryTypeService" />
+	<bean id="form.formParameterService" class="fr.paris.lutece.plugins.form.service.parameter.FormParameterService" />
+    <bean id="form.entryParameterService" class="fr.paris.lutece.plugins.form.service.parameter.EntryParameterService" />
+
+	 <bean id="form.outputProcessorSet"  class="fr.paris.lutece.plugins.form.business.outputprocessor.OutputProcessorSet" />
+    
+     <bean id="form.notifySenderService" class="fr.paris.lutece.plugins.form.modules.processornotifysender.service.NotifySenderService" />
+     <bean id="form.notifySender" class="fr.paris.lutece.plugins.form.modules.processornotifysender.business.ProcessorNotifySender">
+      	<property name="key" value="notifySender" />
+      	<property name="notifySenderService" ref="form.notifySenderService" />
+      	<property name="entryTypeService" ref="form.entryTypeService" />
+     </bean>
+	 
+	 <bean id="form.asynchronousUploadHandler" class="fr.paris.lutece.plugins.form.service.upload.FormAsynchronousUploadHandler" />
+	 
+	 <bean id="form.transactionManager"  class="fr.paris.lutece.portal.service.database.DAOUtilTransactionManager">
+	 	<property name="pluginName" value="form" />
+	 </bean>
+	 
+	 <!-- Export types -->
+	 <bean id="form.exportTypeFactory" class="fr.paris.lutece.plugins.form.business.exporttype.ExportTypeFactory" />
+	 <bean id="form.fullExportType" class="fr.paris.lutece.plugins.form.business.exporttype.FullExportType">
+	 	<property name="key" value="full" />
+	 	<property name="titleI18nKey" value="form.export.type.full" />
+	 </bean>
+	 <bean id="form.lastDateExportType" class="fr.paris.lutece.plugins.form.business.exporttype.LastDateExportType">
+	 	<property name="key" value="lastDate" />
+	 	<property name="titleI18nKey" value="form.export.type.lastDate" />
+	 </bean>
+	 
+	 <!-- File export types -->
+	 <bean id="form.exportServiceFactory" class="fr.paris.lutece.plugins.form.service.export.ExportServiceFactory" />
+	 <bean id="form.formExportService" class="fr.paris.lutece.plugins.form.service.export.FormExportService">
+	 	<property name="key" value="form" />
+	 	<property name="titleI18nKey" value="form.file.export.type.form" />
+	 </bean>
+	 <bean id="form.formSubmitExportService" class="fr.paris.lutece.plugins.form.service.export.FormSubmitExportService">
+	 	<property name="key" value="formSubmit" />
+	 	<property name="titleI18nKey" value="form.file.export.type.formSubmit" />
+	 </bean>
+	 
+	 <bean id="form.entryTypeCheckBox" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeCheckBox" />
+	 <bean id="form.entryTypeComment" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeComment" />
+	 <bean id="form.entryTypeDate" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeDate" />
+	 <bean id="form.entryTypeFile" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeFile" />
+	 <bean id="form.entryTypeGeolocation" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeGeolocation" />
+	 <bean id="form.entryTypeGroup" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeGroup" />
+	 <bean id="form.entryTypeImage" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeImage" />
+	 <bean id="form.entryTypeMandatoryCheckBox" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeMandatoryCheckBox" />
+	 <bean id="form.entryTypeMyLuteceUser" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeMyLuteceUser" />
+	 <bean id="form.entryTypeNumbering" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeNumbering" />
+	 <bean id="form.entryTypeRadioButton" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeRadioButton" />
+	 <bean id="form.entryTypeSelect" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeSelect" />
+	 <bean id="form.entryTypeSelectSQL" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeSelectSQL" />
+	 <bean id="form.entryTypeSession" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeSession" />
+	 <bean id="form.entryTypeText" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeText" />
+	 <bean id="form.entryTypeTextArea" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeTextArea" />
+	 <bean id="form.entryTypeMyLuteceUserattribute" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeMyLuteceUserAttribute" />
+	 <bean id="form.entryTypeArray" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeArray" />
+	 <bean id="form.entryTypeCropImage" class="fr.paris.lutece.plugins.form.service.entrytype.EntryTypeCropImage" />
+	 
+ </beans>

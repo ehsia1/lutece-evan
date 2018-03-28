@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="appointment.appointmentDAO"  class="fr.paris.lutece.plugins.appointment.business.appointment.AppointmentDAO" />  
+	<bean id="appointment.appointmentResponseDAO"  class="fr.paris.lutece.plugins.appointment.business.appointment.AppointmentResponseDAO" />
+	<bean id="appointment.calendarTemplateDAO" class="fr.paris.lutece.plugins.appointment.business.calendar.CalendarTemplateDAO" />
+	<bean id="appointment.categoryDAO"  class="fr.paris.lutece.plugins.appointment.business.category.CategoryDAO" />
+	<bean id="appointment.closingDayDAO"  class="fr.paris.lutece.plugins.appointment.business.planning.ClosingDayDAO" />
+	<bean id="appointment.displayDAO"  class="fr.paris.lutece.plugins.appointment.business.display.DisplayDAO" />
+	<bean id="appointment.formDAO"  class="fr.paris.lutece.plugins.appointment.business.form.FormDAO" />
+	<bean id="appointment.formMessageDAO"  class="fr.paris.lutece.plugins.appointment.business.message.FormMessageDAO" />	
+	<bean id="appointment.formRuleDAO"  class="fr.paris.lutece.plugins.appointment.business.rule.FormRuleDAO" />	
+	<bean id="appointment.localizationDAO"  class="fr.paris.lutece.plugins.appointment.business.localization.LocalizationDAO" />
+	<bean id="appointment.reservationRuleDAO"  class="fr.paris.lutece.plugins.appointment.business.rule.ReservationRuleDAO" />
+	<bean id="appointment.slotDAO"  class="fr.paris.lutece.plugins.appointment.business.slot.SlotDAO" />
+	<bean id="appointment.timeSlotDAO"  class="fr.paris.lutece.plugins.appointment.business.planning.TimeSlotDAO" />
+	<bean id="appointment.userDAO"  class="fr.paris.lutece.plugins.appointment.business.user.UserDAO" />
+	<bean id="appointment.weekDefinitionDAO"  class="fr.paris.lutece.plugins.appointment.business.planning.WeekDefinitionDAO" />
+	<bean id="appointment.workingDayDAO"  class="fr.paris.lutece.plugins.appointment.business.planning.WorkingDayDAO" />				
+	     
+    <bean id="appointment.appointmentPortletDAO"  class="fr.paris.lutece.plugins.appointment.business.portlet.AppointmentPortletDAO" />
+    <bean id="appointment.appointmentFormPortletDAO"  class="fr.paris.lutece.plugins.appointment.business.portlet.AppointmentFormPortletDAO" />
+    <bean id="appointment.appointmentFormListPortletDAO"  class="fr.paris.lutece.plugins.appointment.business.portlet.AppointmentFormListPortletDAO" />       	   	             
+    
+    <bean id="appointment.appointmentAsynchronousUploadHandler" class="fr.paris.lutece.plugins.appointment.service.upload.AppointmentAsynchronousUploadHandler" />
+    
+    <bean id="appointment.formRest"  class="fr.paris.lutece.plugins.appointment.web.rs.FormRest" />
+    
+    <bean id="appointment.entryService" class="fr.paris.lutece.plugins.appointment.service.EntryService" />    
+    <bean id="appointment.entryTypeCheckBox" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeCheckBox" />
+	<bean id="appointment.entryTypeComment" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeComment" />
+	<bean id="appointment.entryTypeDate" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeDate" />
+	<bean id="appointment.entryTypeGeolocation" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeGeolocation" />
+	<bean id="appointment.entryTypeGroup" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeGroup" />
+	<bean id="appointment.entryTypeMyLuteceUser" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeMyLuteceUser" />
+	<bean id="appointment.entryTypeNumbering" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeNumbering" />
+	<bean id="appointment.entryTypeRadioButton" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeRadioButton" />
+	<bean id="appointment.entryTypeSelect" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeSelect" />
+	<bean id="appointment.entryTypeSelectSQL" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeSelectSQL" />
+	<bean id="appointment.entryTypeSession" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeSession" />
+	<bean id="appointment.entryTypeText" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeText" />
+	<bean id="appointment.entryTypeTextArea" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeTextArea" />
+	<bean id="appointment.entryTypeImage" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeImage" />
+	<bean id="appointment.entryTypeFile" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypeFile" />
+	<bean id="appointment.entryTypePhone" class="fr.paris.lutece.plugins.appointment.service.entrytype.EntryTypePhone" />
+</beans>

@@ -1,0 +1,58 @@
+<div class="row">
+	<div class="portlet col-xs-12 col-sm-12 col-md-12">
+		<fieldset>
+		<legend>#i18n{calendar.calendar_manage_events.title} ${calendar.name}</legend>
+			<table summary="#i18n{calendar.calendar_manage_events.tableSummary}"  >
+				<tr>
+					<th>#i18n{calendar.calendar_manage_events.columnEventTitle}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventDateStart}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventDateEnd}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventPeriodicity}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventTimeStart}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventTimeEnd}</th>
+					<th>#i18n{calendar.calendar_manage_events.columnEventActions}</th>
+				</tr>
+				<#list event_list as event >
+				<tr>
+					<td>${event.title}</td>
+					<td>${event.date?date}</td>
+					<td>${event.dateEnd?date}</td>
+					<td>
+						<#switch event.periodicity>
+							<#case 1>
+								#i18n{calendar.interval.periodicity.day.description}
+								<#break>
+							<#case 7>
+								#i18n{calendar.interval.periodicity.week.description}
+								<#break>				  
+							<#case 30>
+								#i18n{calendar.interval.periodicity.month.description}
+								<#break>
+							<#default>
+							#i18n{calendar.interval.periodicity.day.description}				  
+						</#switch>     
+					</td>
+					<td>
+						<#if event.dateTimeStart?exists>
+							${event.dateTimeStart}
+						</#if>
+					</td>
+					<td>
+						<#if event.dateTimeEnd?exists>
+							${event.dateTimeEnd}
+						</#if>
+					</td>
+					<td>
+						<a class="btn btn-primary btn-sm" href="jsp/site/Portal.jsp?page=calendar&amp;action=modify_event&amp;calendar_id=${calendar.id}&amp;event_id=${event.id}"  title="null" >
+							<i class="glyphicon glyphicon-edit"></i>
+						</a>
+						<a class="btn btn-danger btn-sm" href="jsp/site/Portal.jsp?page=calendar&amp;action=remove_event&amp;calendar_id=${calendar.id}&amp;event_id=${event.id}"  title="#i18n{calendar.calendar_manage_events.actionDeleteEvent}" >
+							<i class="glyphicon glyphicon-trash"></i>
+						</a>
+					</td>
+					</tr>
+				</#list>              
+			</table>
+		</fieldset>
+	</div>
+</div>

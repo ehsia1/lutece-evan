@@ -1,0 +1,74 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-9 col-md-9">
+		<#if is_authorized>
+			<div class="btn-group pull-right">
+				<a class="btn" href="${subscription_page}" title="#i18n{calendar.subscription.buttonLabelSubscribe}">
+					<i class="glyphicon glyphicon-star"></i>
+				</a>
+				<a class="btn"  href="${download_page}" title="#i18n{calendar.label.download}">
+					<i class="glyphicon glyphicon-download"></i>
+				</a>
+				<a class="btn" href="javascript:window.print();" title="#i18n{calendar.search.label.buttonPrint}">
+					<i class="glyphicon glyphicon-print"></i>
+				</a>
+				<a class="btn" href="${rss_page}" title="RSS">
+					<i class="glyphicon glyphicon-fire"></i>
+				</a>	
+				<a class="btn" href="${email_friend_page}&event_id=${event.id}&agenda=${agenda.id}" title="#i18n{calendar.email-friend.sendTofriend}">
+					<i class="glyphicon glyphicon-envelope"></i>
+				</a>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4>
+					<#if event.imageUrl?has_content>
+						<img class="thumbnails thumblist-medium" src=${event.imageUrl} title="${event.title}"/>
+					</#if>				
+					${event.title} <small> - ${agenda.name}</small>
+				</h4>	
+				<p>
+				<#if event.date?date?string == event.dateEnd?date?string >					
+					<i class="glyphicon glyphicon-calendar"></i>&nbsp;${event.date?date?string.short}
+				<#else>
+					#i18n{calendar.search_result.labelFrom} ${event.date?date?string.short} #i18n{calendar.search_result.labelTo} ${event.dateEnd?date?string.short}
+				</#if>
+				<#if event.location?has_content>
+					| <i class="glyphicon glyphicon-marker"></i>&nbsp;${event.location}
+				</#if>
+				<#if event.dateTimeStart?has_content>
+					| <i class="glyphicon glyphicon-time"></i>&nbsp;${event.dateTimeStart}
+					<#if event.dateTimeEnd?has_content>
+						- ${event.dateTimeEnd}
+					</#if>
+				</#if>
+				</p>
+				<#if event.description?has_content>
+					<p>${event.description}</p>
+				</#if>
+				<#if event.locationAddress?has_content | event.locationZip?has_content | event.locationTown?has_content>
+					<p>#i18n{calendar.modify_event.location.address} : 
+						<#if event.locationAddress?has_content >${event.locationAddress}</#if> 
+						<#if event.locationZip?has_content >${event.locationZip}</#if> 
+						<#if event.locationTown?has_content >${event.locationTown}</#if> 
+					</p> 
+				</#if>
+				<#if event.mapUrl?has_content >
+					<p> <i class="glyphicon glyphicon-map-marker"></i>&nbsp;#i18n{calendar.modify_event.map} : ${event.mapUrl}</p>
+				</#if>
+				<#if event.linkUrl?has_content >
+					<p>#i18n{calendar.modify_event.linkurl} : <a href="${event.linkUrl}" target="_blank">${event.linkUrl}</a></p>
+				</#if>
+				<#if event.listTags?has_content >
+					<p>#i18n{calendar.modify_event.tags} : ${event.listTags}</p>
+				</#if>
+				${document}
+				</div>
+			</div>
+		<#else>
+			<div class="alert alert-danger">#i18n{calendar.message.event.unauthorized}</div>
+		</#if>
+	</div>
+	<div class="col-xs-12 col-sm-2 col-md-2">
+		${small_month_calendar}
+	</div>
+</div>

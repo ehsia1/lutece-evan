@@ -1,0 +1,57 @@
+<div class="box box-primary">
+	<div class="box-header">
+		<h3 class="box-title">#i18n{calendar.manage_calendars.labelAdvancedParameters}</h3>
+		<div class="box-tools pull-right">
+			<form class="form-inline pull-right" method="post" action="jsp/admin/plugins/calendar/CreateCategory.jsp">
+                <button class="btn btn-primary btn-xs btn-flat" type="submit" >
+                    <i class="glyphicon glyphicon-plus" ></i>
+					<span class="hidden-phone" >#i18n{calendar.manage_category.buttonLabelCreate}</span>
+                </button>
+            </form>
+		</div>
+    </div>
+    <div class="box-body table-responsive">
+        <ul class="nav nav-tabs">
+            <li> 
+                <a href="jsp/admin/plugins/calendar/ManageAdvancedParameters.jsp">#i18n{calendar.advanced_parameters.dashboard}</a>
+            </li>
+            <li  class="active">
+                <a href="jsp/admin/plugins/calendar/ManageCalendarCategory.jsp" >
+                    #i18n{calendar.adminFeature.category_management.description}
+                </a>
+            </li>
+            <li>
+                <a href="jsp/admin/plugins/calendar/style/ManageExportStyleSheets.jsp"  title="null" >
+                    #i18n{calendar.adminFeature.calendar_management_export_stylesheet.description}
+                </a>
+            </li>
+        </ul>
+		<table class="table table-hover table-condensed">
+			<tr>
+				<th>#i18n{calendar.manage_category.columnTitleDescription}</th>
+                <th>#i18n{calendar.manage_category.columnTitleActions}</th>
+            </tr>
+            <#if category_list?has_content >
+                <#list category_list as categoryDisplay >
+                <tr>
+                    <td>
+                        <img src=${categoryDisplay.iconUrl!} class="thumblist" alt="${(categoryDisplay.category).name}" >&nbsp;<strong>${(categoryDisplay.category).description!}</strong>
+						&nbsp;<em>#i18n{calendar.manage_category.columnTitleCountLinkedDocuments}</em>:&nbsp;<strong>${categoryDisplay.countLinkedDocuments!}</strong>
+                    </td>
+                    <td>
+                        <form class="form-inline pull-left spaced" method="post"  action="jsp/admin/plugins/calendar/RemoveCategory.jsp">
+                            <input type="hidden" name="category_id"  value="${(categoryDisplay.category).id}" />
+                            <button class="btn btn-danger btn-xs btn-flat" type="submit"  title="#i18n{workgroup.manage_workgroups.linkLabelRemove}">
+								<i class="fa fa-trash"></i>
+                            </button>
+                        </form>
+						<a class="btn btn-primary btn-xs btn-flat pull-left spaced" href="jsp/admin/plugins/calendar/ModifyCategory.jsp?category_id=${(categoryDisplay.category).id}"  title="null" >
+                            <i class="fa fa-pencil"></i>
+                        </a>
+                    </td>
+                </tr>
+                </#list>
+            </#if>
+        </table>    
+    </div>
+</div>

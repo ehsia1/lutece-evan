@@ -1,0 +1,65 @@
+10/03/18 15:43:38 INFO  [Lutece-MainThread] lutece.event - Lutece logs initialized, using configured property files to define levels and appenders.
+10/03/18 15:43:38 INFO  [Lutece-MainThread] lutece.event - Starting LUTECE ...
+10/03/18 15:43:38 INFO  [Lutece-MainThread] lutece.event - Running version 6.1.0
+10/03/18 15:43:38 INFO  [Lutece-MainThread] lutece.event - Creating connexions pool 'portal'.
+10/03/18 15:43:38 INFO  [Lutece-MainThread] lutece.event - Loading context files ...
+10/03/18 15:43:39 INFO  [Lutece-MainThread] lutece.event - Context file loaded : core_context.xml
+10/03/18 15:43:39 INFO  [Lutece-MainThread] lutece.event - Context file loaded : lucene_context.xml
+10/03/18 15:43:39 INFO  [Lutece-MainThread] lutece.event - Context file loaded : enroll_context.xml
+10/03/18 15:43:39 INFO  [Lutece-MainThread] lutece.event - Context file loaded : rest_context.xml
+10/03/18 15:43:39 INFO  [Lutece-MainThread] lutece.event - Loading plugins context overrides
+10/03/18 15:43:40 INFO  [Lutece-MainThread] lutece.event - New Page Event Listener registered : fr.paris.lutece.portal.service.cache.PathCacheService
+10/03/18 15:43:40 INFO  [Lutece-MainThread] lutece.event - New ImageResourceType registered : fr.paris.lutece.portal.service.page.PageService
+10/03/18 15:43:40 INFO  [Lutece-MainThread] lutece.event - New Page Event Listener registered : fr.paris.lutece.portal.service.page.PageService
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Spring context loaded in 2461ms
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Running extra startup services ...
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Initializing plugins ...
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New XPage application registered : search
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New XPage application registered : map
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New search indexer registered : PageIndexer
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : main_menu
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : tree_menu
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : links
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : metas
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : statistics
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Page Include Service registered : themes
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Dashboard Component registered : CORE_SYSTEM
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Dashboard Component registered : CORE_USERS
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Dashboard Component registered : CORE_USER
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Dashboard Component registered : CORE_PAGES
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Admin Dashboard Component registered : usersAdminDashboardComponent
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Admin Dashboard Component registered : searchAdminDashboardComponent
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : PAGE
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : PORTLET_TYPE
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : INSERT_SERVICE
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : ADMIN_USER
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : SEARCH_SERVICE
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : GLOBAL_MANAGEMENT_SERVICE
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New RBAC resource type registered : XSL_EXPORT
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Daemon registered : indexer
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Daemon registered : mailSender
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Daemon registered : anonymizationDaemon
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Daemon registered : accountLifeTimeDaemon
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Daemon registered : threadLauncherDaemon
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - SpringService cache cleared due to a plugin installation change - Plugin : core
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Plugin registered : lucene
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New XPage application registered : project
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Plugin registered : enroll
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Filter registered : REST Filter
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New Plugin registered : rest *** Warning : current status is 'disabled' ***
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Initializing plugins filters ...
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Initialize plugins filters
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Initializing plugins servlets ...
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Initialize plugins servlets
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Content Service 'XPageAppService' is loaded  [ cache disable ] 
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Content Service 'Page Content Service' is loaded  [ cache disable ] 
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New freemarker autoinclude : */commons.html from core
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - New freemarker autoinclude : */commons_site.html from core
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Scheduling daemon mailSender; first run in 7 seconds
+10/03/18 15:43:41 INFO  [Lutece-MainThread] lutece.event - Scheduling daemon threadLauncherDaemon; first run in 14 seconds
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - Scheduling daemon accountLifeTimeDaemon; first run in 21 seconds
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - Scheduling daemon indexer; first run in 28 seconds
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - Authentication module loaded : LUTECE DEFAULT AUTHENTICATION
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - New ImageResourceType registered : fr.paris.lutece.portal.service.fileimage.FileImageService
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - Running post startup services ...
+10/03/18 15:43:42 INFO  [Lutece-MainThread] lutece.event - Datastore's cache started.

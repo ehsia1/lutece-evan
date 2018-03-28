@@ -1,0 +1,15 @@
+fr/paris/lutece/plugins/enroll/web/portlet/EnrollPortletJspBean.class
+fr/paris/lutece/plugins/enroll/business/portlet/EnrollPortlet.class
+fr/paris/lutece/plugins/enroll/web/ProjectXPage.class
+fr/paris/lutece/plugins/enroll/business/ProjectDAO.class
+fr/paris/lutece/plugins/enroll/rs/SwaggerRest.class
+fr/paris/lutece/plugins/enroll/business/portlet/EnrollPortletDAO.class
+fr/paris/lutece/plugins/enroll/web/ProjectJspBean.class
+fr/paris/lutece/plugins/enroll/business/IProjectDAO.class
+fr/paris/lutece/plugins/enroll/business/portlet/EnrollPortletHome.class
+fr/paris/lutece/plugins/enroll/rs/Constants.class
+fr/paris/lutece/plugins/enroll/rs/ProjectRest.class
+fr/paris/lutece/plugins/enroll/web/ManageEnrollJspBean.class
+fr/paris/lutece/plugins/enroll/business/Project.class
+fr/paris/lutece/plugins/enroll/business/portlet/IEnrollPortletDAO.class
+fr/paris/lutece/plugins/enroll/business/ProjectHome.class

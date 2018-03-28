@@ -1,0 +1,1324 @@
+05/03/18 23:24:59 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:24:59 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ErrorPage.jsp
+05/03/18 23:25:00 ERROR [http-nio-8080-exec-2] lutece.error - org.apache.lucene.search.PhraseQuery: method <init>()V not found
+java.lang.NoSuchMethodError: org.apache.lucene.search.PhraseQuery: method <init>()V not found
+	at fr.paris.lutece.plugins.calendar.service.search.CalendarLuceneSearchEngine.getSearchResults(CalendarLuceneSearchEngine.java:171)
+	at fr.paris.lutece.plugins.calendar.service.search.CalendarSearchService.getSearchResults(CalendarSearchService.java:99)
+	at fr.paris.lutece.plugins.calendar.service.XMLUtils.getXMLPortletCalendar(XMLUtils.java:538)
+	at fr.paris.lutece.plugins.calendar.business.portlet.CalendarPortlet.getXml(CalendarPortlet.java:216)
+	at fr.paris.lutece.portal.service.page.PageService.getPortletContent(PageService.java:683)
+	at fr.paris.lutece.portal.service.page.PageService.getPageContent(PageService.java:517)
+	at fr.paris.lutece.portal.service.page.PageService.buildPageContent(PageService.java:460)
+	at fr.paris.lutece.portal.service.page.PageService.getPage(PageService.java:309)
+	at fr.paris.lutece.portal.service.page.PageService.getPage(PageService.java:224)
+	at fr.paris.lutece.portal.service.page.PageContentService.getPage(PageContentService.java:59)
+	at fr.paris.lutece.portal.web.admin.AdminPageJspBean.getAdminPagePreview(AdminPageJspBean.java:206)
+	at org.apache.jsp.jsp.admin.site.AdminPagePreview_jsp._jspService(AdminPagePreview_jsp.java:143)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:444)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.xss.SafeRequestFilter.doFilter(SafeRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.upload.UploadFilter.doFilter(UploadFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.service.filter.MainFilter.doFilter(MainFilter.java:105)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.upload.DosGuardFilter.doFilter(DosGuardFilter.java:126)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.user.AuthenticationFilter.doFilter(AuthenticationFilter.java:161)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:93)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:409)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+05/03/18 23:25:00 ERROR [http-nio-8080-exec-2] lutece.error - org.apache.lucene.search.PhraseQuery: method <init>()V not found
+java.lang.NoSuchMethodError: org.apache.lucene.search.PhraseQuery: method <init>()V not found
+	at fr.paris.lutece.plugins.calendar.service.search.CalendarLuceneSearchEngine.getSearchResults(CalendarLuceneSearchEngine.java:171)
+	at fr.paris.lutece.plugins.calendar.service.search.CalendarSearchService.getSearchResults(CalendarSearchService.java:99)
+	at fr.paris.lutece.plugins.calendar.service.XMLUtils.getXMLPortletCalendar(XMLUtils.java:538)
+	at fr.paris.lutece.plugins.calendar.business.portlet.CalendarPortlet.getXml(CalendarPortlet.java:216)
+	at fr.paris.lutece.portal.service.page.PageService.getPortletContent(PageService.java:683)
+	at fr.paris.lutece.portal.service.page.PageService.getPageContent(PageService.java:517)
+	at fr.paris.lutece.portal.service.page.PageService.buildPageContent(PageService.java:460)
+	at fr.paris.lutece.portal.service.page.PageService.getPage(PageService.java:309)
+	at fr.paris.lutece.portal.service.page.PageService.getPage(PageService.java:224)
+	at fr.paris.lutece.portal.service.page.PageContentService.getPage(PageContentService.java:59)
+	at fr.paris.lutece.portal.web.admin.AdminPageJspBean.getAdminPagePreview(AdminPageJspBean.java:206)
+	at org.apache.jsp.jsp.admin.site.AdminPagePreview_jsp._jspService(AdminPagePreview_jsp.java:143)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:444)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.xss.SafeRequestFilter.doFilter(SafeRequestFilter.java:106)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.upload.UploadFilter.doFilter(UploadFilter.java:149)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.service.filter.MainFilter.doFilter(MainFilter.java:105)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.upload.DosGuardFilter.doFilter(DosGuardFilter.java:126)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.user.AuthenticationFilter.doFilter(AuthenticationFilter.java:161)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at fr.paris.lutece.portal.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:93)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:409)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+05/03/18 23:25:00 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece//css/admin/bootstrap-responsive.min.css
+05/03/18 23:25:00 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece//images/poweredby.jpg
+05/03/18 23:25:20 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePage.jsp
+05/03/18 23:25:20 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:25:21 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePage.jsp
+05/03/18 23:25:21 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:25:21 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:25:21 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:25:26 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+05/03/18 23:25:26 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/plugins/appointment/bootstrap-datepicker.standalone.css
+05/03/18 23:25:26 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+05/03/18 23:25:40 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:25:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:25:42 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:25:44 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMenu.jsp
+05/03/18 23:25:44 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'calendar.dashboard.modifyCalendar' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.modifyCalendar
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'calendar.dashboard.modifyCalendar' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.modifyCalendar
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'calendar.dashboard.addEvent' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.addEvent
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'calendar.dashboard.addEvent' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.addEvent
+05/03/18 23:25:44 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMenu.jsp
+05/03/18 23:25:44 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-2] lutece.error - Error localizing key : 'calendar.dashboard.modifyCalendar' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.modifyCalendar
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-2] lutece.error - Error localizing key : 'calendar.dashboard.modifyCalendar' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.modifyCalendar
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-2] lutece.error - Error localizing key : 'calendar.dashboard.addEvent' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.addEvent
+05/03/18 23:25:44 ERROR [http-nio-8080-exec-2] lutece.error - Error localizing key : 'calendar.dashboard.addEvent' - Can't find resource for bundle java.util.PropertyResourceBundle, key dashboard.addEvent
+05/03/18 23:26:23 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/ManagePlugins.jsp
+05/03/18 23:26:23 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:26:25 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/ConfirmUninstallPlugin.jsp
+05/03/18 23:26:25 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:26:27 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/DoUninstallPlugin.jsp
+05/03/18 23:26:27 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/ManagePlugins.jsp
+05/03/18 23:26:27 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:26:32 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/ConfirmUninstallPlugin.jsp
+05/03/18 23:26:32 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:26:41 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/system/ConfirmUninstallPlugin.jsp
+05/03/18 23:26:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:26:44 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:26:44 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:26:44 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:26:48 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:26:48 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:26:48 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/jstree/jquery.cookie.js
+05/03/18 23:26:48 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/jstree/jquery.jstree.js
+05/03/18 23:26:49 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/jstree/themes/classic/style.css
+05/03/18 23:26:49 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/jstree/themes/classic/d.png
+05/03/18 23:26:55 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:26:55 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:26:55 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:27:01 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:27:01 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:27:01 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:27:03 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:27:03 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:27:03 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:27:04 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:27:04 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:27:04 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:29:17 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:29:17 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:29:24 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:29:24 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:29:24 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:29:25 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:29:25 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:29:25 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:29:28 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:29:28 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:36:01 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:36:01 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:01 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:01 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:36:06 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:36:06 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:36:16 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:36:16 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:16 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:16 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:36:18 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:36:18 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:36:28 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:36:28 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:28 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:28 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:36:30 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:36:30 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:36:44 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:36:44 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:44 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:44 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:36:45 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:36:45 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:36:49 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:36:49 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:49 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:49 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:36:52 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:36:52 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:36:52 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:37:39 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:37:39 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:37:39 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:37:41 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:37:41 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:37:47 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:37:47 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:37:47 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:37:48 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:37:48 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:37:48 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:37:50 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:37:50 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:37:56 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:37:57 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:37:57 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:37:57 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:37:59 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:37:59 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:38:29 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:38:29 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:38:30 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:38:30 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:38:36 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:38:36 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:38:39 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:38:39 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:38:39 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:38:39 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:38:42 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:38:42 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:38:46 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:38:46 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:38:46 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:38:48 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:38:48 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:38:48 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:38:55 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:38:55 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:38:55 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:04 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPage.jsp
+05/03/18 23:39:04 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:04 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:04 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:06 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:39:06 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:39:10 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:39:10 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:10 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:10 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:19 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:19 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:19 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:32 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:39:32 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:32 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:32 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:39 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:39 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:39 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:44 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:39:44 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:39:49 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:39:49 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:39:49 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:39:58 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:39:58 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:40:06 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:40:06 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:40:06 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:40:06 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:40:08 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:40:08 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:40:18 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:40:18 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:40:18 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:40:18 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:40:22 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePortlet.jsp
+05/03/18 23:40:22 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:40:23 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePortlet.jsp
+05/03/18 23:40:23 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:40:23 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:40:23 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:40:27 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:40:27 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:40:36 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:40:36 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:40:36 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:40:36 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:40:41 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePortlet.jsp
+05/03/18 23:40:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:40:42 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePortlet.jsp
+05/03/18 23:40:42 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:40:42 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:40:42 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:40:47 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:40:47 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:41:04 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:41:04 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:41:04 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:41:04 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:42:42 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePortlet.jsp
+05/03/18 23:42:42 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:42:43 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePortlet.jsp
+05/03/18 23:42:43 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:42:43 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:42:43 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:42:45 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:42:45 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:42:45 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:42:46 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:42:46 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:42:47 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:42:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:42:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:43:02 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:43:02 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:43:02 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:02 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:43:14 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePortlet.jsp
+05/03/18 23:43:14 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:43:15 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePortlet.jsp
+05/03/18 23:43:15 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:43:15 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:15 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:43:16 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:43:16 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:18 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:43:18 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:18 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:43:20 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:43:20 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:43:34 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:43:34 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:43:34 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:34 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:43:40 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:43:40 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:43:40 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:44:03 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:44:03 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:44:04 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:44:04 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:44:04 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:44:06 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:44:06 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:44:06 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:44:11 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:44:11 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:46:35 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:46:35 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:46:35 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:46:35 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:46:37 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:46:37 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:46:53 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:46:53 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:46:53 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:46:53 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:46:56 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:46:56 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:47:09 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:47:09 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:47:09 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:47:09 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:48:02 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:48:02 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:48:49 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:48:49 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:48:49 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:48:49 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:48:50 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:48:50 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:48:54 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:48:54 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:48:54 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:48:54 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:48:59 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:48:59 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:49:15 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:49:15 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:15 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:15 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:21 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:49:21 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:49:25 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:25 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:26 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:29 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:49:29 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:31 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:31 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:31 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:34 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:49:34 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:49:45 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:49:45 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:45 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:45 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:47 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:49:47 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:49:52 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:49:52 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:52 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:52 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:54 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:54 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:54 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:49:56 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:49:56 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:49:59 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:49:59 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:49:59 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:49:59 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:13 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:13 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:13 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:26 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:50:26 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:26 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:26 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:28 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:28 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:28 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:34 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:36 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:38 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:38 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:39 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:50:50 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:50 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:50 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:50:56 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePortlet.jsp
+05/03/18 23:50:57 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:50:59 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePortlet.jsp
+05/03/18 23:50:59 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:50:59 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:50:59 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:51:04 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:08 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:51:08 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:51:26 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:51:26 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:51:26 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:26 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:51:33 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:33 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:51:36 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:51:36 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:36 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:51:38 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:51:38 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:51:43 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:51:43 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:51:44 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:44 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:51:46 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:51:46 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:47 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:51:47 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:51:47 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:51:50 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:51:50 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:52:04 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:52:04 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:52:04 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:04 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:52:07 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:52:07 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:08 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:52:08 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:08 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:52:10 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:52:10 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:52:25 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:52:25 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:52:25 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:25 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:52:27 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:52:27 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:28 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:52:28 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:28 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:52:33 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:52:33 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:52:49 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:52:49 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:52:49 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:52:49 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:53:27 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:53:27 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:53:35 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:53:35 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:53:35 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:35 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:53:41 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:53:41 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:42 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:53:42 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:42 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:53:43 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:53:43 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:53:50 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:53:50 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:53:50 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:50 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:53:51 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:53:51 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:52 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:52 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:53:52 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:53:55 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+05/03/18 23:53:55 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+05/03/18 23:53:59 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+05/03/18 23:53:59 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:53:59 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:53:59 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:02 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:02 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:02 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:12 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:54:12 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:12 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:12 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:15 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:54:15 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:54:40 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:54:40 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:40 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:40 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:43 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:43 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:43 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:51 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:54:51 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:51 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:51 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:54 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:54:54 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:54:56 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:56 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:56 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:54:58 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:54:58 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:54:58 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:02 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePage.jsp
+05/03/18 23:55:02 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:55:04 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePage.jsp
+05/03/18 23:55:04 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:55:07 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:07 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:07 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:09 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:09 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:09 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:12 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePage.jsp
+05/03/18 23:55:12 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:55:13 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePage.jsp
+05/03/18 23:55:13 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:55:13 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:13 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:13 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:15 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:15 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:15 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:23 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:28 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:55:28 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:28 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:30 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:30 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:30 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:33 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:33 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:33 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:36 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:36 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:36 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:40 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:40 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:40 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:43 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:43 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:43 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:45 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:55:46 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:48 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:48 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:48 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:50 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:50 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:53 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPage.jsp
+05/03/18 23:55:53 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:53 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:54 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:55:58 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:55:58 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:55:58 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:01 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:56:01 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:03 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:03 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:04 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:07 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:07 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:07 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:12 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPage.jsp
+05/03/18 23:56:12 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:12 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:12 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:15 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:56:15 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:56:29 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:56:29 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:29 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:29 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:32 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:32 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:33 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:34 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:34 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:34 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:38 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:38 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:38 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:40 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:40 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:40 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:50 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoCreateChildPage.jsp
+05/03/18 23:56:50 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:56:50 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:56:50 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:56:53 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:56:53 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+05/03/18 23:57:08 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+05/03/18 23:57:08 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:57:08 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:57:09 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:57:26 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:57:26 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:57:26 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:57:34 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:57:34 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:57:34 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:57:40 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/RemovePage.jsp
+05/03/18 23:57:40 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:57:41 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoRemovePage.jsp
+05/03/18 23:57:41 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:57:41 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:57:41 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:57:46 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:57:46 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:57:46 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:57:51 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:57:51 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/CreatePortletAppointmentFormList.jsp
+05/03/18 23:58:05 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/DoCreatePortletAppointmentFormList.jsp
+05/03/18 23:58:05 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:58:05 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:58:05 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:58:08 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/ModifyPortletStatus.jsp
+05/03/18 23:58:08 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+05/03/18 23:58:09 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPortletStatus.jsp
+05/03/18 23:58:09 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:58:09 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:58:09 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:58:32 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+05/03/18 23:58:32 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:58:37 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+05/03/18 23:58:38 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+05/03/18 23:58:38 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+05/03/18 23:58:44 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoCreatePortlet.jsp
+05/03/18 23:58:44 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/CreatePortletHtml.jsp
+06/03/18 00:08:19 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoCreatePortletHtml.jsp
+06/03/18 00:08:19 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:08:19 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:08:19 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:08:23 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:08:23 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:09:52 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:09:52 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:09:52 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:09:53 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:09:53 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:09:54 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:09:57 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:10:24 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminLogin.jsp
+06/03/18 00:10:27 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoAdminLogin.jsp
+06/03/18 00:10:27 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMenu.jsp
+06/03/18 00:10:28 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:30 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:30 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:10:30 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:10:33 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:10:33 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:33 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:10:35 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/ModifyPortletStatus.jsp
+06/03/18 00:10:35 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+06/03/18 00:10:36 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPortletStatus.jsp
+06/03/18 00:10:36 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:10:36 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:36 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:10:44 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:10:44 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/plugins/appointment/bootstrap-datepicker.standalone.css
+06/03/18 00:10:44 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+06/03/18 00:10:53 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:57 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/ModifyPortletStatus.jsp
+06/03/18 00:10:57 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+06/03/18 00:10:58 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/DoModifyPortletStatus.jsp
+06/03/18 00:10:58 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:10:58 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:10:58 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:11:47 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:11:47 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:11:47 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:11:49 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:11:49 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:11:56 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:11:56 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:11:56 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:11:56 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:12:35 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:12:35 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:12:36 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:12:36 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:12:39 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:12:39 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:13:13 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:13:13 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:13:13 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:13:13 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:13:21 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:13:21 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:13:24 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:13:24 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:13:24 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:13:25 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:13:37 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:13:37 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:14:21 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:14:21 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:14:21 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:14:21 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:14:27 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:14:27 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:14:40 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:14:40 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:14:40 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:14:40 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:14:40 DEBUG [http-nio-8080-exec-3] lutece.cache - Object removed from the cache : LinksIncludeCacheService - key : [mode=1][locale=en_US]
+06/03/18 00:14:50 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:14:50 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:15:06 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:15:06 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:15:06 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:15:06 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:15:12 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:15:12 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:15:16 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:15:16 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:15:16 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:15:16 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:15:22 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:15:22 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:15:32 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:15:32 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process default view
+06/03/18 00:15:32 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:03 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointments.jsp
+06/03/18 00:17:03 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'viewCalendarManageAppointment'
+06/03/18 00:17:03 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:03 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/plugins/appointment/fullcalendar_ow_bo.css
+06/03/18 00:17:03 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/css/images/ui-bg_flat_75_ffffff_40x100.png
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'manageTypicalWeek'
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/plugins/appointment/bootstrap-datetimepicker.css
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+06/03/18 00:17:11 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_flat_75_ffffff_40x100.png
+06/03/18 00:17:39 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:17:39 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'manageTypicalWeek'
+06/03/18 00:17:39 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:40 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+06/03/18 00:17:40 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_flat_75_ffffff_40x100.png
+06/03/18 00:17:43 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointments.jsp
+06/03/18 00:17:43 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'viewCalendarManageAppointment'
+06/03/18 00:17:43 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:46 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:52 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentFormEntries.jsp
+06/03/18 00:17:52 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormEntries'
+06/03/18 00:17:52 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:54 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:17:58 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:18:01 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:19:33 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:19:33 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:19:33 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:19:33 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:19:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:19:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:20:01 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:20:01 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:20:01 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:20:01 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:20:03 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:20:03 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:20:51 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:20:51 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:20:51 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:20:51 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:20:54 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:20:54 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:24:14 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:24:14 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:24:14 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:24:14 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:24:35 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:24:35 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:26:25 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:26:25 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:26:25 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:26:25 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:26:28 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:26:28 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:27:13 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:27:13 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:27:13 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:27:13 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:27:20 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:27:20 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:27:39 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:27:39 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:27:39 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:27:39 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:27:41 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:27:41 DEBUG [http-nio-8080-exec-9] lutece.cache - Object removed from the cache : LinksIncludeCacheService - key : [mode=0][page=appointment][locale=en_US]
+06/03/18 00:27:51 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:27:54 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:27:54 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:28:06 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:28:06 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:28:06 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:28:06 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:28:07 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:10 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:13 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:16 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:28:16 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:28:25 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:28:25 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:28:25 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:28:25 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:28:27 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:30 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:35 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:40 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:28:55 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:28:55 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:30:01 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:30:01 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:30:01 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:30:01 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:30:07 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:30:07 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:30:13 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:30:13 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:30:13 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:30:13 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:30:16 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:30:16 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:30:34 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:30:34 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:30:34 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:30:34 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:41 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:46 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentFormEntries.jsp
+06/03/18 00:31:46 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormEntries'
+06/03/18 00:31:47 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:48 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:31:52 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:31:52 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+06/03/18 00:31:52 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:33:30 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:33:30 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+06/03/18 00:33:30 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:33:41 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:33:43 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process action : 'doModifyAppointmentFormMessages'
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-7] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+06/03/18 00:34:26 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:34:33 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageCalendarTemplates.jsp
+06/03/18 00:34:33 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process default view
+06/03/18 00:34:33 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:20 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:35:20 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:20 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process default view
+06/03/18 00:35:22 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/form/ManageForm.jsp
+06/03/18 00:35:23 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:26 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentCategory.jsp
+06/03/18 00:35:26 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process default view
+06/03/18 00:35:26 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:28 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageCalendarTemplates.jsp
+06/03/18 00:35:28 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:28 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process default view
+06/03/18 00:35:31 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageCalendarTemplates.jsp
+06/03/18 00:35:31 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'getCreateModifyTemplate'
+06/03/18 00:35:31 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:34 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageCalendarTemplates.jsp
+06/03/18 00:35:34 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process default view
+06/03/18 00:35:34 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:37 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/regularexpression/ManageRegularExpression.jsp
+06/03/18 00:35:37 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:41 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/workflow/ManageWorkflow.jsp
+06/03/18 00:35:41 ERROR [http-nio-8080-exec-7] lutece.error - Error localizing key : 'workflow.manage_workflow.button_import' - Can't find resource for bundle java.util.PropertyResourceBundle, key manage_workflow.button_import
+06/03/18 00:35:41 ERROR [http-nio-8080-exec-7] lutece.error - Error localizing key : 'workflow.manage_workflow.button_import' - Can't find resource for bundle java.util.PropertyResourceBundle, key manage_workflow.button_import
+06/03/18 00:35:41 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:43 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/features/ManageExternalFeatures.jsp
+06/03/18 00:35:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'portal.features.manage_external_features.pageTitle' - Can't find resource for bundle java.util.PropertyResourceBundle, key manage_external_features.pageTitle
+06/03/18 00:35:44 ERROR [http-nio-8080-exec-9] lutece.error - Error localizing key : 'portal.features.manage_external_features.pageTitle' - Can't find resource for bundle java.util.PropertyResourceBundle, key manage_external_features.pageTitle
+06/03/18 00:35:44 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:46 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/xsl/ManageXslExport.jsp
+06/03/18 00:35:46 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:49 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/globalmanagement/GetGlobalManagement.jsp
+06/03/18 00:35:50 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:35:56 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/style/ManageStyles.jsp
+06/03/18 00:35:56 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:36:05 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ManageProperties.jsp
+06/03/18 00:36:05 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:36:31 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyProperties.jsp
+06/03/18 00:36:31 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ManageProperties.jsp
+06/03/18 00:36:31 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:36:38 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:36:38 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:36:38 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:36:38 DEBUG [http-nio-8080-exec-2] lutece.cache - Object removed from the cache : LinksIncludeCacheService - key : [mode=1][locale=en_US]
+06/03/18 00:36:39 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:36:39 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:36:39 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:36:42 DEBUG [http-nio-8080-exec-5] lutece.cache - Object removed from the cache : LinksIncludeCacheService - key : [mode=0][locale=en_US]
+06/03/18 00:36:43 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:37:06 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyProperties.jsp
+06/03/18 00:37:06 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ManageProperties.jsp
+06/03/18 00:37:06 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:38:50 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ManageProperties.jsp
+06/03/18 00:38:50 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:38:56 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyProperties.jsp
+06/03/18 00:38:56 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/ManageProperties.jsp
+06/03/18 00:38:56 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:38:58 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:38:58 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:38:58 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process default view
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'createAppointmentForm'
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:39:00 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:39:32 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:32 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process action : 'createAppointmentForm'
+06/03/18 00:39:32 INFO  [http-nio-8080-exec-8] util.Version - HV000001: Hibernate Validator 5.3.2.Final
+06/03/18 00:39:32 INFO  [http-nio-8080-exec-8] xml.ValidationXmlParser - HV000007: META-INF/validation.xml found. Parsing XML based configuration.
+06/03/18 00:39:32 INFO  [http-nio-8080-exec-8] xml.ValidationBootstrapParameters - HV000004: Using fr.paris.lutece.util.beanvalidation.LuteceMessageInterpolator as message interpolator.
+06/03/18 00:39:33 ERROR [http-nio-8080-exec-8] lutece.error - Error localizing key : 'appointment.model.entity.appointmentform.attribute.description' - Can't find resource for bundle java.util.PropertyResourceBundle, key model.entity.appointmentform.attribute.description
+06/03/18 00:39:33 ERROR [http-nio-8080-exec-8] lutece.error - Error localizing key : 'appointment.model.entity.appointmentform.attribute.description' - Can't find resource for bundle java.util.PropertyResourceBundle, key model.entity.appointmentform.attribute.description
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-8] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=createAppointmentForm&id_form=0&error=1
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'createAppointmentForm'
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:39:33 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:39:36 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process action : 'createAppointmentForm'
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-4] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=createAppointmentForm&id_form=0&error=1
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'createAppointmentForm'
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:39:37 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process action : 'createAppointmentForm'
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-9] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+06/03/18 00:39:45 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:47 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:47 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process action : 'doChangeFormActivation'
+06/03/18 00:39:47 DEBUG [http-nio-8080-exec-4] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+06/03/18 00:39:47 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:39:47 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+06/03/18 00:39:48 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:49 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:39:49 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:50 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:39:51 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:39:51 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:39:51 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:39:55 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+06/03/18 00:40:00 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:00 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:00 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process default view
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:03 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:14 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentFormEntries.jsp
+06/03/18 00:40:14 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormEntries'
+06/03/18 00:40:14 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:15 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process action : 'modifyAppointmentForm'
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-9] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=modifyAppointmentForm&id_form=6
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'modifyAppointmentForm'
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.css
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/js/plugins/leaflet/leaflet/leaflet.js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/jquery/plugins/ui/%E2%80%8Bjquery-ui-1.9.2.custom.min.js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:27 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:30 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:30 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:30 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process default view
+06/03/18 00:40:33 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointments.jsp
+06/03/18 00:40:33 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'viewCalendarManageAppointment'
+06/03/18 00:40:33 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:37 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointments.jsp
+06/03/18 00:40:37 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'manageAppointments'
+06/03/18 00:40:37 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:37 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:37 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/js/locales/bootstrap-datepicker..js
+06/03/18 00:40:40 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointments.jsp
+06/03/18 00:40:40 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'viewCalendarManageAppointment'
+06/03/18 00:40:40 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:43 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:40:43 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:43 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process default view
+06/03/18 00:40:44 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:40:44 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'manageTypicalWeek'
+06/03/18 00:40:45 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:45 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+06/03/18 00:40:45 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/images/ui-bg_flat_75_ffffff_40x100.png
+06/03/18 00:40:48 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:40:48 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'viewModifyTimeSlot'
+06/03/18 00:40:48 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:40:58 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:40:58 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process view : 'manageSpecificWeek'
+06/03/18 00:40:58 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:00 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentSlots.jsp
+06/03/18 00:41:00 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'viewModifySlot'
+06/03/18 00:41:01 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:05 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:41:05 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process default view
+06/03/18 00:41:05 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:07 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:41:07 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process action : 'confirmRemoveAppointmentForm'
+06/03/18 00:41:07 DEBUG [http-nio-8080-exec-1] lutece.mvc - Redirect :http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+06/03/18 00:41:07 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process action : 'removeAppointmentForm'
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-8] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+06/03/18 00:41:08 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:11 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:41:11 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:11 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:41:13 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:41:13 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:13 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:41:20 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminMap.jsp
+06/03/18 00:41:20 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:23 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:41:23 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:23 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:41:24 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:41:24 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:41:35 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:41:35 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:41:35 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:35 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:41:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:41:41 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:41:56 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:41:56 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:41:56 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:41:56 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:42:03 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:42:03 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:42:23 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:42:23 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:42:23 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:42:23 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:42:40 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:42:41 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:42:47 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:42:47 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:42:47 DEBUG [http-nio-8080-exec-2] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:42:47 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:42:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:42:50 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:43:10 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:43:11 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:43:11 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:43:11 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:43:25 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:43:25 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:43:33 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:43:33 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:43:33 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:43:33 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:43:37 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:43:37 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:43:41 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:43:41 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:43:41 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:43:41 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:43:50 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:43:50 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:44:06 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:44:06 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:44:06 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:44:06 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+06/03/18 00:53:01 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoModifyPortlet.jsp
+06/03/18 00:53:01 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/ModifyPortletHtml.jsp
+06/03/18 00:53:06 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/html/DoModifyPortletHtml.jsp
+06/03/18 00:53:06 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminSite.jsp
+06/03/18 00:53:06 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+06/03/18 00:53:06 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/site/AdminPagePreview.jsp
+08/03/18 14:05:41 DEBUG [Lutece-MainThread] lutece.rest - Listing registered services and providers
+08/03/18 14:05:41 DEBUG [Lutece-MainThread] lutece.rest - class com.sun.jersey.server.impl.container.servlet.JSPTemplateProcessor
+08/03/18 14:05:41 DEBUG [Lutece-MainThread] lutece.rest - class fr.paris.lutece.plugins.appointment.web.rs.FormRest
+08/03/18 14:05:41 DEBUG [Lutece-MainThread] lutece.rest - End of listing
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-4] lutece.authentication - Access NOT granted to url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-6] lutece.authentication - Access NOT granted to url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:05:47 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminMessage.jsp
+08/03/18 14:05:51 DEBUG [http-nio-8080-exec-8] lutece.cache - Initializing cache : PageCachingFilter
+08/03/18 14:05:51 ERROR [http-nio-8080-exec-8] lutece.error - LocaleService : invalid defined locale en - default set to en
+08/03/18 14:05:51 ERROR [http-nio-8080-exec-8] lutece.error - LocaleService : invalid defined locale en - default set to en
+08/03/18 14:05:55 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:06:12 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:06:28 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:01 DEBUG [Lutece-MainThread] lutece.rest - Listing registered services and providers
+08/03/18 14:14:01 DEBUG [Lutece-MainThread] lutece.rest - class com.sun.jersey.server.impl.container.servlet.JSPTemplateProcessor
+08/03/18 14:14:01 DEBUG [Lutece-MainThread] lutece.rest - class fr.paris.lutece.plugins.appointment.web.rs.FormRest
+08/03/18 14:14:01 DEBUG [Lutece-MainThread] lutece.rest - End of listing
+08/03/18 14:14:02 DEBUG [http-nio-8080-exec-1] lutece.cache - Initializing cache : PageCachingFilter
+08/03/18 14:14:02 ERROR [http-nio-8080-exec-1] lutece.error - LocaleService : invalid defined locale en - default set to en
+08/03/18 14:14:02 ERROR [http-nio-8080-exec-1] lutece.error - LocaleService : invalid defined locale en - default set to en
+08/03/18 14:14:08 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:11 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:18 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:18 DEBUG [http-nio-8080-exec-8] lutece.mvc - Redirect :Portal.jsp?page=appointment&view=getViewAppointmentForm&id_form=4&id_slot=0&starting_date_time=2018-03-14T18:30&ending_date_time=2018-03-14T19:45&is_open=true&is_specific=false&max_capacity=20&anchor=#step3
+08/03/18 14:14:18 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:23 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:27 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:27 DEBUG [http-nio-8080-exec-3] lutece.mvc - Redirect :Portal.jsp?page=appointment&view=getViewAppointmentForm&id_form=2&id_slot=3&starting_date_time=2018-03-08T18:00&ending_date_time=2018-03-08T19:00&is_open=true&is_specific=false&max_capacity=30&anchor=#step3
+08/03/18 14:14:28 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:32 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:35 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:39 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:43 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:14:44 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:44 DEBUG [http-nio-8080-exec-5] lutece.mvc - Redirect :Portal.jsp?page=appointment&view=getViewAppointmentForm&id_form=3&id_slot=0&starting_date_time=2018-03-11T09:30&ending_date_time=2018-03-11T10:30&is_open=true&is_specific=false&max_capacity=20&anchor=#step3
+08/03/18 14:14:44 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:14:48 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/AdminLogin.jsp
+08/03/18 14:14:48 DEBUG [http-nio-8080-exec-9] lutece.cache - Initializing cache : StaticFilesCachingFilter
+08/03/18 14:14:48 DEBUG [http-nio-8080-exec-9] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:14:51 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/DoAdminLogin.jsp
+08/03/18 14:14:51 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:14:51 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:14:52 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:14:58 DEBUG [http-nio-8080-exec-4] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:14:58 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:14:58 DEBUG [http-nio-8080-exec-5] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:15:02 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:05 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:10 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:15:10 DEBUG [http-nio-8080-exec-5] lutece.mvc - Redirect :Portal.jsp?page=appointment&view=getViewAppointmentForm&id_form=3&id_slot=5&starting_date_time=2018-03-11T09:30&ending_date_time=2018-03-11T10:30&is_open=true&is_specific=false&max_capacity=20&anchor=#step3
+08/03/18 14:15:10 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'getViewAppointmentForm'
+08/03/18 14:15:14 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:20 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:23 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:30 DEBUG [http-nio-8080-exec-4] lutece.mvc - MVC controller - process view : 'getViewAppointmentCalendar'
+08/03/18 14:15:42 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:15:42 DEBUG [http-nio-8080-exec-7] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:15:42 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+08/03/18 14:15:49 DEBUG [http-nio-8080-exec-8] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:15:49 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:15:49 DEBUG [http-nio-8080-exec-8] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-9] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-9] lutece.mvc - MVC controller - process action : 'doModifyAppointmentFormMessages'
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-9] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:15:54 DEBUG [http-nio-8080-exec-1] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:15:59 DEBUG [http-nio-8080-exec-3] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:15:59 DEBUG [http-nio-8080-exec-3] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+08/03/18 14:15:59 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process action : 'doModifyAppointmentFormMessages'
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-5] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:16:02 DEBUG [http-nio-8080-exec-6] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:16:08 DEBUG [http-nio-8080-exec-10] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:08 DEBUG [http-nio-8080-exec-10] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+08/03/18 14:16:08 DEBUG [http-nio-8080-exec-8] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-2] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-2] lutece.mvc - MVC controller - process action : 'doModifyAppointmentFormMessages'
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-2] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-1] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-1] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:16:13 DEBUG [http-nio-8080-exec-3] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:16:15 DEBUG [http-nio-8080-exec-4] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css
+08/03/18 14:16:15 DEBUG [http-nio-8080-exec-5] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:15 DEBUG [http-nio-8080-exec-5] lutece.mvc - MVC controller - process view : 'modifyAppointmentFormMessages'
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-7] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-7] lutece.mvc - MVC controller - process action : 'doModifyAppointmentFormMessages'
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-7] lutece.mvc - Redirect :ManageAppointmentForms.jsp?view=manageAppointmentForms
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-6] lutece.authentication - Accessing url : http://localhost:8080/lutece/jsp/admin/plugins/appointment/ManageAppointmentForms.jsp
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-6] lutece.mvc - MVC controller - process view : 'manageAppointmentForms'
+08/03/18 14:16:27 DEBUG [http-nio-8080-exec-10] lutece.cache - URI served from cache : /lutece/css/admin/bootstrap-clockpicker.css

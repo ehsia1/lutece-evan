@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><plug-in>
+    <name>appointment</name>
+    <class>fr.paris.lutece.plugins.appointment.service.AppointmentPlugin</class>
+    <version>2.0.7</version>
+    <documentation/>
+    <installation/>
+    <changes/>
+    <user-guide/>
+    <description>appointment.plugin.description</description>
+    <provider>appointment.plugin.provider</provider>
+    <provider-url>http://dev.lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/appointment/appointment.png</icon-url>
+    <copyright>Copyright (c) 2013 Mairie de Paris</copyright>
+    <db-pool-required>1</db-pool-required>
+    
+    <!-- Admin features parameters -->
+	<admin-features>
+		<admin-feature>
+            <feature-id>APPOINTMENT_FORM_MANAGEMENT</feature-id>
+            <feature-title>appointment.adminFeature.ManageAppointmentForm.name</feature-title>
+            <feature-description>appointment.adminFeature.ManageAppointmentForm.description</feature-description>
+            <feature-level>2</feature-level>
+            <feature-url>jsp/admin/plugins/appointment/ManageAppointmentForms.jsp</feature-url>
+            <feature-icon-url/>
+		</admin-feature>
+		<admin-feature>
+            <feature-id>APPOINTMENT_CALENDAR_TEMPLATE</feature-id>
+            <feature-title>appointment.adminFeature.manageCalendarTemplates.name</feature-title>
+            <feature-description>appointment.adminFeature.manageCalendarTemplates.name</feature-description>
+            <feature-level>0</feature-level>
+            <feature-url>jsp/admin/plugins/appointment/ManageCalendarTemplates.jsp</feature-url>
+            <feature-icon-url/>
+		</admin-feature>
+		<admin-feature>
+            <feature-id>APPOINTMENT_CATEGORY_MANAGEMENT</feature-id>
+            <feature-title>appointment.adminFeature.manageCategories.name</feature-title>
+            <feature-description>appointment.adminFeature.manageCategories.name</feature-description>
+            <feature-level>2</feature-level>
+            <feature-url>jsp/admin/plugins/appointment/ManageAppointmentCategory.jsp</feature-url>
+            <feature-icon-url/>
+		</admin-feature>
+    </admin-features>
+	<rbac-resource-types>
+		<rbac-resource-type>
+			<rbac-resource-type-class>
+				fr.paris.lutece.plugins.appointment.service.AppointmentResourceIdService
+			</rbac-resource-type-class>
+		</rbac-resource-type>
+	</rbac-resource-types>    
+  	<!-- XPages parameters -->
+    <applications>
+        <application>
+            <application-id>appointment</application-id>
+            <application-class>fr.paris.lutece.plugins.appointment.web.AppointmentApp</application-class>
+        </application>
+    </applications>
+    <!-- Dashboard components -->
+    <dashboard-components>
+        <dashboard-component>
+            <dashboard-component-name>APPOINTMENT_FORM</dashboard-component-name>
+            <dashboard-component-class>fr.paris.lutece.plugins.appointment.web.AppointmentFormDashboardComponent</dashboard-component-class>
+            <dashboard-feature-right>APPOINTMENT_FORM_MANAGEMENT</dashboard-feature-right>
+        </dashboard-component>
+    </dashboard-components>
+	<!-- Portlet parameters -->
+    <portlets>
+     <portlet>
+       <portlet-class>fr.paris.lutece.plugins.appointment.business.portlet.AppointmentPortletHome</portlet-class>
+	   <portlet-type-id>APPOINTMENT_PORTLET</portlet-type-id>
+	   <portlet-type-name>appointment.portlet.appointmentAppointmentPortlet.name</portlet-type-name>
+	   <portlet-creation-url>plugins/appointment/CreatePortletAppointment.jsp</portlet-creation-url>
+	   <portlet-update-url>plugins/appointment/ModifyPortletAppointment.jsp</portlet-update-url>
+	   <portlet-create-action-url>plugins/appointment/DoCreatePortletAppointment.jsp</portlet-create-action-url>
+      <portlet-modify-action-url>plugins/appointment/DoModifyPortletAppointment.jsp</portlet-modify-action-url>
+	    <!-- optional entries -->
+        <portlet-create-script-template>/admin/portlet/script_create_portlet.html</portlet-create-script-template>
+        <portlet-modify-script-template>/admin/portlet/script_modify_portlet.html</portlet-modify-script-template>
+        <portlet-create-specific-template>/admin/plugins/appointment/portlet/create_portletappointment.html</portlet-create-specific-template>
+        <portlet-modify-specific-template>/admin/plugins/appointment/portlet/modify_portletappointment.html</portlet-modify-specific-template>
+        <portlet-create-specific-form-template/>
+        <portlet-modify-specific-form-template/> 
+     </portlet>
+   </portlets>	
+    <css-stylesheets>
+        <css-stylesheets-scope>portal</css-stylesheets-scope>
+        <css-stylesheet>appointment/appointment.css</css-stylesheet>
+    </css-stylesheets>
+</plug-in>

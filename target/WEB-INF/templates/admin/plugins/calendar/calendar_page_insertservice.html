@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12">
+    <h3>#i18n{portal.insert.page_insertservice.title}</h3>
+		<table class="table table-hover table-condensed">
+        <tr>
+            <th>#i18n{portal.insert.page_insertservice.labelInsert}</th>
+        </tr>
+        <#list insert_services_list as insertservice>
+        <tr>
+            <td>
+                <a class="btn btn-primary btn-sm" href="jsp/admin/insert/DisplayInsertService.jsp?insert_service_type=${insertservice.id}&amp;plugin_name=${insertservice.pluginName}&amp;input=${input}&amp;selected_text=${selected_text}" title="#i18n{portal.util.labelOk}" >
+                    <i class="glyphicon glyphicon-ok"></i>
+                </a>
+            </td>
+        </tr>
+        </#list>
+		</table>
+	</div>   
+</div>   
+ 

@@ -1,0 +1,10 @@
+<td class="${day_class}">
+	<#if jsp_url != "">
+		<a href="${jsp_url}?page=calendar&amp;date=${date}&amp;view=day">${day}</a>
+	<#else>
+		${day}
+	</#if>
+	<ul class="list-unstyled">
+     	${events}
+    </ul>
+</td>

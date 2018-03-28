@@ -1,0 +1,21 @@
+<#if config?exists>
+  <script src="js/plugins/workflow/modules/comment/comment.js"></script>
+  <div class="clearfix">
+    <div class="pull-left">
+      <#if config.title?exists >
+        <label>${config.title} :</label>
+      </#if>
+    </div>
+    <div class="pull-right">
+      <#if has_permission_delete >
+        <a class="btn btn-danger btn-xs" href="#" onclick="removeComment(${id_history}, ${task.id});return false;" title="#i18n{module.workflow.comment.button.remove_comment}">
+          <i class="fa fa-trash"></i>
+        </a>
+      </#if>
+    </div>
+  </div>
+  <#if comment_value?exists && comment_value.value?has_content>
+    ${comment_value.value}
+  </#if>
+</#if>
+

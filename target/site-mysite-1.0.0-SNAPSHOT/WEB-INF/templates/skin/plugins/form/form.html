@@ -1,0 +1,44 @@
+<#-- 
+Theses Java objects can be used in this template :
+ - form_html : the HTML code of the form
+ - form : the form object 
+ - form_inactive : the message when the form is not active
+-->
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<#if is_draft_saved>
+			<div class="alert alert-danger">#i18n{form.xpage.form.draftSaved}</div>
+		</#if>
+		
+		<#if form_errors?? && form_errors?has_content>			<#assign hasDisplayableError = false>
+			<#list form_errors as form_error>				<#if form_error.isDisplayableError>					<#assign hasDisplayableError = true>
+					<#break >
+				</#if>
+			</#list>
+			<#if hasDisplayableError>
+				<div class="alert alert-danger">
+					<#list form_errors as form_error>
+						<#if form_error.isDisplayableError>
+							<p>
+								<#if form_error.url?? && form_error.url != ''>
+									<a href="${form_error.url!}">
+								</#if>
+								${form_error.errorMessage!}
+								<#if form_error.url?? && form_error.url != ''>
+									</a>
+								</#if>
+							</p>
+						</#if>
+					</#list>
+				</div>
+			</#if>
+		</#if>
+		<#if !form_inactive?has_content>
+			${form_html!}
+		<#else>
+			${form_inactive}
+		</#if>
+		<script type="text/javascript" src="jsp/site/plugins/asynchronousupload/GetMainUploadJs.jsp?handler=formAsynchronousUploadHandler" ></script>
+	</div>
+</div>
+

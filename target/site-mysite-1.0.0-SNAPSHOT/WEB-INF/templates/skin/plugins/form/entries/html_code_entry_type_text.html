@@ -1,0 +1,80 @@
+	<div class="form-group">
+		<label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="attribute${entry.idEntry}">${entry.title}<#if entry.mandatory> *</#if></label>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<#list entry.fields as field>
+				<#if field.title?? &&  field.title == "additionalAddress">
+					<input readonly="readonly" type="text" class="form-control input-sm" name="attribute${entry.idEntry}" id="id_additional_address" <#if field.width &gt; 0>style="width:${field.width}px;"</#if>
+					<#if list_responses??>
+						<#list list_responses as response>
+						<#if response.entry.idEntry == entry.idEntry>
+							<#if response.toStringValueResponse??>
+								value="${response.toStringValueResponse}"
+							</#if>
+							<#if response.entry.error??>
+								class="error"
+							</#if>
+							</#if>
+						</#list>
+					<#else>
+						<#if field.value?exists>
+							value="${field.value}" 
+						<#else>
+							 value="" 
+						</#if>
+					</#if>
+					<#if field.maxSizeEnter!=-1>
+						maxlength="${field.maxSizeEnter}"
+					</#if>
+				class="${entry.CSSClass!} "	/>
+				<#else>
+					<input type="text" class="form-control input-sm" name="attribute${entry.idEntry}" id="attribute${entry.idEntry}" <#if field.width &gt; 0>style="width:${field.width}px;"</#if>
+					<#if list_responses??>
+						<#list list_responses as response>
+						<#if response.entry.idEntry == entry.idEntry>
+							<#if response.toStringValueResponse??>
+								value="${response.toStringValueResponse}"
+							</#if>
+							<#if response.entry.error??>
+								class="error"
+							</#if>
+							</#if>
+						</#list>
+					<#else>
+						<#if field.value?exists>
+							value="${field.value}" 
+						<#else>
+							 value="" 
+						</#if>
+					</#if>
+					<#if field.maxSizeEnter!=-1>
+						maxlength="${field.maxSizeEnter}"
+					</#if>
+				class="${entry.CSSClass!} "	/>
+				</#if>
+				
+			</#list>
+			<#if entry.helpMessage?exists&&entry.helpMessage!=''>
+				<span class="help-block">${entry.helpMessage}</span>
+			</#if>
+		</div>
+	</div>
+
+<#if list_responses??>
+	<#list list_responses as response>
+		<#if response.entry.idEntry == entry.idEntry && response.entry.error?? && response.entry.error.isDisplayableError>
+			<#assign error = response.entry.error>
+			<div class="alert alert-danger"><#if error.mandatoryError>#i18n{form.message.mandatory.entry}<#else>${error.errorMessage}</#if></div>
+		</#if>
+	</#list>
+</#if>
+<#if entry.confirmField>
+	<div class="form-group">
+		<label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="attribute${entry.idEntry}_confirm_field">${entry.confirmFieldTitle}<#if entry.mandatory> *</#if></label>
+		<#list entry.fields as field>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<input type="text" class="form-control input-sm" name="attribute${entry.idEntry}_confirm_field" id="attribute${entry.idEntry}_confirm_field" size="${field.width}" value="" 
+				<#if field.maxSizeEnter!=-1>maxlength="${field.maxSizeEnter}"</#if>/>
+			</div>
+		</#list>
+	</div>
+</#if>
